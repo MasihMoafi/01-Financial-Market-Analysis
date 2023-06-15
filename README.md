@@ -30,9 +30,9 @@ In addition to the time-series analysis, a swing trading simulation is performed
 
 The initial portfolio value and the final portfolio value after the swing trading simulation are displayed. Additionally, the evaluation metrics (MAE, MSE, RMSE) obtained from the time-series analysis model are printed.
 
-Mean Absolute Error (MAE): 0.015570827002044691
-Mean Squared Error (MSE): 0.0005311421891220035
-Root Mean Squared Error (RMSE): 0.02304652227825282
+(MAE): 0.015
+(MSE): 0.0005
+(RMSE): 0.023
 
 ---
 
