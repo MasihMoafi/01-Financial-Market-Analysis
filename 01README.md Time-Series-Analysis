@@ -34,6 +34,8 @@ The initial portfolio value and the final portfolio value after the swing tradin
 (MSE): 0.0005
 (RMSE): 0.023
 
+Something really cool is that you can put any chart data in, Tesla, Eth, whatever, you get perfect results!
+
 ---
 
 This project showcases the utilization of LSTM neural networks and ResNet for efficient time-series analysis of Bitcoin price data. By combining these techniques, the model's accuracy and speed increases significantly.
