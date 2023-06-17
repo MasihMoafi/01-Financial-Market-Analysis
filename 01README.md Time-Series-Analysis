@@ -42,4 +42,14 @@ Something really cool is that you can put any chart data in, Tesla, Eth, etc, an
 
 ---
 
+Note: The model is predicting price changes rather than absolute prices, nonetheless, it's still capable of identifying trends in the price data, hence the profitable strategy. 
+
+A more detailed explanation to gain better intuition as to what the model is doing: 
+    The model was trained to predict the change in price and volume for the next 6 days based on the last 6 days of data.
+    Then, the predicted change is added to the last known price to get the predicted price.
+    The trading strategy involves buying when the predicted price is higher than the current price (and the difference is above a certain threshold). It means that the model is predicting an upward trend in price.
+    If the price actually goes up, the strategy will make a profit. If it goes down, it will make a loss.
+
+So even though the model is predicting price changes rather than absolute prices, it's still capable of identifying trends in the price data, which is what this trading strategy is based on. This is why the strategy could be profitable.
+
 This project showcases the utilization of LSTM neural networks and ResNet for efficient time-series analysis of Bitcoin price data. By combining these techniques, the model's accuracy and speed increases significantly.
