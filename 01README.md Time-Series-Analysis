@@ -1,10 +1,8 @@
-# Time-series Analysis, Utilizing LSTM in Conjunction with ResNet for Efficiency
-
-This project focuses on performing time-series analysis on Bitcoin price data using LSTM (Long Short-Term Memory) neural networks in combination with ResNet (Residual Network) for improved efficiency.
+# Time-series Analysis by using LSTM in Conjunction with ResNet for Efficiency
 
 ## Data Preparation
 
-Note: The dataset can be downloaded freely from coingecko, it's the daily prices from 2013 to 2023.
+Note: The dataset is uploaded in this repository. You can use any other dataset you want as well, the model generalizes quite well.
 
 The first step involves loading and preparing the data. The Bitcoin price data is loaded from a CSV file and any missing data is removed. A visualization of the closing prices is generated to provide an overview of the data. 
 
@@ -30,19 +28,17 @@ Evaluation metrics such as mean absolute error (MAE), mean squared error (MSE), 
 
 In addition to the time-series analysis, a swing trading simulation is performed using a simple strategy. Based on a moving average indicator (SMA_30), buy and sell signals are generated. The simulation tracks the portfolio value and trade types (buy/sell) throughout the last two months.
 
-Note: We cutoff the last two months' data from our training.
+Note: We cutoff the last two months' data from our training so that our predictions be accurate.
 
-Since our swing trading wasn't profitable, we developed a new strategy that is indeed profitable, the details of this strategy are explored the project.
+Since our swing trading wasn't profitable, we developed a new strategy that is indeed profitable, the details of this strategy are explored in the project.
 
 ## Results
 
 The initial portfolio value and the final portfolio value after the swing trading simulation are displayed. 
 
-Something really cool is that you can put any chart data in, Tesla, Eth, etc, and the model will converge almost perfectly.
-
 ---
 
-Note: The model is predicting price changes rather than absolute prices, nonetheless, it's still capable of identifying trends in the price data, hence the profitable strategy. 
+Note: The model is predicting price changes rather than absolute prices, this is a common strategy used in financial markets to make the model more robust.
 
 A more detailed explanation to gain better intuition as to what the model is doing: 
     The model was trained to predict the change in price and volume for the next 6 days based on the last 6 days of data.
@@ -52,4 +48,8 @@ A more detailed explanation to gain better intuition as to what the model is doi
 
 So even though the model is predicting price changes rather than absolute prices, it's still capable of identifying trends in the price data, which is what this trading strategy is based on. This is why the strategy could be profitable.
 
-This project showcases the utilization of LSTM neural networks and ResNet for efficient time-series analysis of Bitcoin price data. By combining these techniques, the model's accuracy and speed increases significantly.
+Note: Several different architectures where tested and compared, the best results were made by the resNet LSTM model. We tried CNN-transformers, LSTM, regression, added ConvNets and Dense layers to our model etc.
+
+## Summary
+
+This project showcases the utilization of ResNet LSTM model for efficient time-series analysis of Bitcoin price data. By combining these techniques, the model's accuracy and speed increases significantly.
