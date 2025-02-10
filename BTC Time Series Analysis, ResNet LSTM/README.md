@@ -53,7 +53,3 @@ Note: Several different architectures where tested and compared, the best result
 ## Summary
 
 This project showcases the utilization of ResNet LSTM model for efficient time-series analysis of Bitcoin price data. By combining these techniques, the model's accuracy and speed increases significantly.
-
-## Update
-
-A more enhanced version with better results in available at: [https://www.kaggle.com/code/masihmaafi/last-btc-notebook/edit]
